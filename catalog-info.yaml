@@ -1,16 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: demo
-  description: An example of a Backstage application.
-  labels:
-    system: web-apps
-  tags:
-    - javascript
-    - react
+  name: 'your-component'
+  description: 'a description'
   annotations:
-    jenkins.io/github-folder: 'briandesousa/backstage-sample-service'
+    jenkins.io/github-folder: 'folder-name/project-name'
 spec:
   type: service
   lifecycle: experimental
-  owner: avinash
+  owner: your-name
