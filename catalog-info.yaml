@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: 'your-component'
+  name: 'pipeline'
   description: 'a description'
   annotations:
-    jenkins.io/github-folder: 'folder-name/project-name'
+    jenkins.io/job-full-name: 'backstage/backstage/master'
 spec:
   type: service
   lifecycle: experimental
-  owner: your-name
+  owner: backstage-team-a
