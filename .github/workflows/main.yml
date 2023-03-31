@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Backstage
-        uses: github/backstage@v3
+        uses: github/backstage@v2
         env: 
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
