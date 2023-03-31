@@ -1,0 +1,16 @@
+name: Backstage
+
+on: push
+
+jobs:
+  backstage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Backstage
+        uses: github/backstage@v3
+        env: 
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
