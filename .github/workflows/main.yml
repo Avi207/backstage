@@ -15,3 +15,9 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello from Octo Organization
+      
+      - name: Run Backstage
+        uses: github/backstage@v
+        env: 
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
