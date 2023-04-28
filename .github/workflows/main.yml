@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
       
       - name: Run Backstage
-        uses: github/backstage@v1.0.0
+        uses: github/backstage@v1
         env: 
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
